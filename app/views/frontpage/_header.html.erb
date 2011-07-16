@@ -1,0 +1,33 @@
+
+<div id="headerFront">
+  <div id="banner" class="banner_top">
+    <div id="logo_gea"><%= link_to(image_tag('logo_gea.gif', :alt => t('logo.alt'), :id=>"header_logo"), '/'); %></div>
+	<h1><a href="#">GEA <p/><strong>Gestión de la Educación Autónoma </strong></a></h1>
+  </div>
+           <div class="div_login">
+             
+                <span>
+                 <label for="login"><%= t('email.one') %></label>
+								</span>
+                 <%= text_field_tag 'login', params[:login], :class=>"input_username" %>
+                
+                <span>
+                  <label for="password"><%= t('password.one') %></label>
+								</span>
+                  <%= password_field_tag 'password', nil, :class=>"input_username" %>
+                
+                <button type="submit" class="other_blue"><%=t("login")%></button>
+
+                 
+             <div id="subtexto">
+               <%= link_to t('register.one'), "#", :class => "register_link" %> 
+               <span>|</span>
+               <%= link_to t('user.lost_password'), "#", :class => "register_link" %> 
+             </div>  
+         </div> 	 
+
+     </div> 
+
+  
+</div>
+

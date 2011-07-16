@@ -1,0 +1,98 @@
+/*************Basic SECTION ********************/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+html, body {
+	height: 100%;
+}
+.p {
+	margin: 0px;
+	padding: 0px;
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+	text-align: inherit;
+	color: inherit;
+	line-height: inherit;
+	vertical-align: top;
+}
+p {
+	padding-top: 0px;
+	margin-top: 0px;
+}
+img {
+	border: 0px;
+}
+div {
+	margin: 0px;
+	padding: 0px;
+	font-family: Helvetica;
+	font-size: 11px;
+}
+a:link, a:visited {
+	color: inherit;
+	text-decoration: inherit;
+}
+a:hover {
+	text-decoration: underline;
+}
+.clearfloat {
+	clear: both;
+	height: 0px;
+}
+h2 {
+	padding-left:10px;
+}
+header, footer, section, nav, article, aside {
+	display: block;
+}
+
+
+/******* Main Structure SECTION***************************/
+	body {
+		font-size:1.0em;
+		width: 100%;
+		margin: 0px auto;
+	}
+	
+	#full_content {
+		min-height: 552px;
+		width: 960px;
+		position: relative;
+		clear:both;
+		margin:0px auto;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: auto;
+		margin-bottom:auto;
+		background-color: #CCCCCC;
+	}
+	
+	
+	
+/*********** footer SECTION *********************/
+
+#footer {
+	height: 25px;
+	background: #3B5998;
+	padding: 2px 0px 0px 0px;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 3px;
+	position: relative;
+}
+#footer ul {
+	list-style-type: none;
+	margin: 0 0.5em;
+}
+#footer ul li {
+	display: inline-block;
+	margin-right: 0.25em;
+	position: relative;
+	font-weight: bold;
+	color: #111;
+}
+

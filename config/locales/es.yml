@@ -1,0 +1,24 @@
+# Sample localization file for Spanish
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+es:
+  email:
+    one: "Email"
+  footer:
+    contact: "Contacto"
+    feedback: "Envianos comentarios"
+    legal_notice: "Aviso legal"
+    rights: "Todos los derechos reservados"
+  frontpage:
+    title: "GEA Formación"
+  logo:
+    alt: "GEA Formación"
+  meta:
+    description: "Web de cursos online de GEA"
+    keywords: "Cursos online, Formación virtual, Gestión de la educación Autónoma"
+  password:
+    one: "Contraseña"
+  register:
+  	one: "Registrarse"
+  web:
+    name: "GEA Formación"

@@ -1,0 +1,30 @@
+<!-- HTML5 DOCTYPE -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title><%= t('frontpage.title')%></title>
+    <meta name="keywords" content="t('meta.keywords')%>" >
+    <meta name="description" content= "t('meta.description')%>" >
+	
+    <%= stylesheet_link_tag "common","frontpage", "frontpage_header", :media => "screen, projection" %>
+    <%= javascript_include_tag 'jquery' %>
+    <%= favicon_link_tag "icons/favicon.ico" %>
+
+    <% if protect_against_forgery? %>
+      <%= csrf_meta_tag %>
+    <% end %>
+  </head>
+  
+  <body>  	
+      <header>
+        <%= render :partial => "frontpage/header" %>
+      </header>
+      <section id="full_content">        
+                  <%= yield %>
+      </section>
+      <footer id="frontpage_footer">
+        <%= render :partial => "frontpage/footer" %>
+      </footer>
+    </div>
+</html>
