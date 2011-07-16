@@ -1,8 +1,8 @@
 /****************** HEADER STRUCTURE ******/
 #headerFront {	width: 100%; height: 74px; padding: 0;	background: #3B5998;  padding: 2px 0px 0px 0px; color: white;}
 .banner_top{	width: 960px;	margin-left: auto;	margin-right: auto;	margin-top: 3px;  padding-bottom: 3px; position: relative; }
-#logo_gea{  width:146px;  height:64px;  float:left;  vertical-align:top; margin-left: 10px; margin-right: 20px;}
-#header_logo{width:146px;  height:64px;  float:left;  vertical-align:top; }
+#logo_gea{ height:63px;  float:left;  vertical-align:top; margin-left: 10px; margin-right: 20px;}
+#header_logo{ height:63px;  float:left;  vertical-align:top; }
 
 
 .div_login{

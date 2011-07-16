@@ -24,6 +24,7 @@ es:
   password:
     one: "Contraseña"
   register:
+    lost_password: "Recuperar contraseña"
     one: "Registrarse"
   web:
     name: "GEA Formación"
