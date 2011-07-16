@@ -10,15 +10,20 @@ es:
     legal_notice: "Aviso legal"
     rights: "Todos los derechos reservados"
   frontpage:
+    big_message: "Tenemos lo que necesitas. ¿Consúltanos!" 
+    tick1: "Enseñanza de calidad"
+    tick2: "Cursos online"
+    tick3: "Cursos presenciales"
+    tick4: "Empresa homologada" 
     title: "GEA Formación"
   logo:
-    alt: "GEA Formación"
+    alt: "GEA Formación - Ir a la página principal"
   meta:
     description: "Web de cursos online de GEA"
     keywords: "Cursos online, Formación virtual, Gestión de la educación Autónoma"
   password:
     one: "Contraseña"
   register:
-  	one: "Registrarse"
+    one: "Registrarse"
   web:
     name: "GEA Formación"

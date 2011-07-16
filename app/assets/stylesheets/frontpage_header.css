@@ -1,35 +1,22 @@
 /****************** HEADER STRUCTURE ******/
-#headerFront {	width: 100%; height: 70px; padding: 0;	background: #3B5998;  padding: 2px 0px 0px 0px;}
+#headerFront {	width: 100%; height: 74px; padding: 0;	background: #3B5998;  padding: 2px 0px 0px 0px; color: white;}
 .banner_top{	width: 960px;	margin-left: auto;	margin-right: auto;	margin-top: 3px;  padding-bottom: 3px; position: relative; }
-#logo_gea{  width:60px;  height:60px;  float:left;  vertical-align:top; margin-right: 10px;}
-#header_logo{width:60px;  height:60px;  float:left;  vertical-align:top; }
+#logo_gea{  width:146px;  height:64px;  float:left;  vertical-align:top; margin-left: 10px; margin-right: 20px;}
+#header_logo{width:146px;  height:64px;  float:left;  vertical-align:top; }
 
-#banner {
-    margin: 0 auto;
-    padding: 5px 0 0 0;
+
+.div_login{
+	margin-left: 200px;
+	position: relative;
+width: 580px;
+display: inline-block;
+text-align: right;
+vertical-align: top;
+padding-top: 5px;
+margin-top: 3px;
 }
+	
 
-/* Banner */
-#banner h1 {
-    font-size: 3.571em;
-    line-height: .6;
-}
-
-#banner h1 a:link, #banner h1 a:visited {
-    color: #000305;
-    display: block;
-    font-weight: bold;
-    text-decoration: none;
-    width: 527px;
-}
-
-#banner h1 a:hover, #banner h1 a:active {
-    background: none;
-    color: #C74350;
-    text-shadow: none;
-}
-
-#banner h1 strong {
-    font-size: 0.36em;
-    font-weight: normal;
+#sub_login {
+	margin-top: 10px;
 }

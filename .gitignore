@@ -1,0 +1,12 @@
+.bundle
+.DS_Store
+.rvmrc
+index
+.project
+.loadpath
+log/*.log
+*kpf
+tmp/*
+**.tmp_*
+Gemfile.lock
+

@@ -1,0 +1,48 @@
+#full_content {
+	position: relative;
+}
+
+#laptop_image {
+	width: 450px;
+	position: absolute;
+top: 80px;
+}
+
+#checks_right {
+	width: 500px;
+	position: absolute;
+left: 550px;
+top: 100px;
+}
+
+#checks_right ul{
+	list-style-type: none;
+}
+
+.tick_front{
+	width: 50px;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.tick_text{
+	font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+	font-weight: normal;
+    font-size: 2.25em;
+	letter-spacing: .2em;
+	line-height: 1.1em;
+	margin:0px;
+}
+
+#big_message {
+	font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+	font-weight: normal;
+    font-size: 2em;
+	letter-spacing: .2em;
+	line-height: 1.1em;
+	margin:0px;
+	position: absolute;
+	top: 475px;
+	left: 100px;
+	color: #3B5998;
+}

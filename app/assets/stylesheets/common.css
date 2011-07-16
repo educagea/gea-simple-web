@@ -67,7 +67,7 @@ header, footer, section, nav, article, aside {
 		margin-right: auto;
 		margin-top: auto;
 		margin-bottom:auto;
-		background-color: #CCCCCC;
+		background-color: white;
 	}
 	
 	
@@ -78,7 +78,7 @@ header, footer, section, nav, article, aside {
 	height: 25px;
 	background: #3B5998;
 	padding: 2px 0px 0px 0px;
-	width: 960px;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	padding-bottom: 3px;
@@ -86,13 +86,18 @@ header, footer, section, nav, article, aside {
 }
 #footer ul {
 	list-style-type: none;
-	margin: 0 0.5em;
+	margin: auto;
+	width: 460px;
 }
 #footer ul li {
 	display: inline-block;
 	margin-right: 0.25em;
 	position: relative;
 	font-weight: bold;
-	color: #111;
+	color: white;
 }
 
+#footer_logo {
+	width: 25px;
+	margin-right: 10px;
+}
