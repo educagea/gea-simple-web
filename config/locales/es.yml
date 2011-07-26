@@ -10,7 +10,12 @@ es:
     legal_notice: "Aviso legal"
     rights: "Todos los derechos reservados"
   frontpage:
-    big_message: "Tenemos lo que necesitas. ¿Consúltanos!" 
+    big_message: "Tenemos lo que necesitas. ¿Consúltanos!"
+    tabs:
+      home: "Principal" 
+      homologations: "Homologaciones"
+      courses: "Cursos"
+      contact: "Contacto"
     tick1: "Enseñanza de calidad"
     tick2: "Cursos online"
     tick3: "Cursos presenciales"
@@ -27,4 +32,6 @@ es:
     lost_password: "Recuperar contraseña"
     one: "Registrarse"
   web:
-    name: "GEA Formación"
+    name: "Mundo GEA"
+    title: 
+      main: "Gea Formación"

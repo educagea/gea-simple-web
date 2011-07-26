@@ -1,3 +1,11 @@
+<% content_for :title do%>
+  <%= t('web.title.main') %>
+<%end%>
+
+<%content_for :javascript do%>
+  $("#home_li").addClass("selected");
+<%end%>
+
 <div id="image_left">
 	<%=image_tag('portatil.jpg', :id=>"laptop_image")%>
 </div>

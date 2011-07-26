@@ -77,11 +77,10 @@ header, footer, section, nav, article, aside {
 #footer {
 	height: 25px;
 	background: #3B5998;
-	padding: 2px 0px 0px 0px;
+	padding: 2px 0px 3px 0px;
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	padding-bottom: 3px;
 	position: relative;
 }
 #footer ul {
@@ -95,9 +94,12 @@ header, footer, section, nav, article, aside {
 	position: relative;
 	font-weight: bold;
 	color: white;
+	float: left;
+	line-height: 25px;
 }
 
 #footer_logo {
-	width: 25px;
+	height: 25px;
 	margin-right: 10px;
+	float: left;
 }
