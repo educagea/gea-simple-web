@@ -2,6 +2,9 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 es:
+  accept: "Acceptar"
+  accept_conditions_html: He leido y acepto las <a href="%{url}"> condiciones de uso </a>
+  content: "Contenido"
   email:
     one: "Email"
   footer:
@@ -31,6 +34,7 @@ es:
   register:
     lost_password: "Recuperar contraseña"
     one: "Registrarse"
+  subject: "Asunto"
   web:
     name: "Mundo GEA"
     title: 

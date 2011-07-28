@@ -8,6 +8,13 @@
 
     <section>
         <article>
-            contacto
+            <%= form_for @contact do |f| %>
+              <label for="subject"><%= t('subject') %>:</label><p><%= f.text_field :subject, :class => "", :size => 20 %></p>
+              <label for="content"><%= t('content') %>:</label><p><%= f.text_field :content, :class => "", :size => 20 %></p>              
+              <label for="email"><%= t('email.one') %>:</label><p><%= f.email_field :email %></p>
+              <p><%= f.check_box :accepted, {}, true,false %> <%= t('accept_conditions_html', :url=>"/conditions") %></p>
+              <%= f.submit t('accept') %>
+            <%end%>
         </article>
     </section>
+    
