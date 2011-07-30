@@ -11,6 +11,10 @@ es:
   email:
     example: tuemail@ejemplo.com
     one: "Email"
+  flash:  
+    contacts:  
+      create:  
+        notice: "Su mensaje se ha enviado correctamente. Gracias, nos pondremos en contacto con usted con la mayor brevedad posible."  
   footer:
     contact: "Contacto"
     feedback: "Envianos comentarios"

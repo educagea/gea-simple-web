@@ -8,4 +8,5 @@ class ContactsController < InheritedResources::Base
     end    
   end
   
+  
 end

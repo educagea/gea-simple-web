@@ -69,7 +69,7 @@ body {
 #footer ul {
 	list-style-type: none;
 	margin: auto;
-	width: 460px;
+	width: 560px;
 }
 #footer ul li {
 	display: inline-block;
@@ -111,3 +111,100 @@ input:placeholder, textarea:placeholder {
 #input_passwd{
 	width: 150px;
 }
+
+/*********** Notices SECTION *********************/
+.notice, .success, .alert, .error, .validation, #error_explanation {
+	border: 1px solid;
+	margin: 10px 0px;
+	padding: 15px 10px 15px 40px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.notice ul, .success ul, .alert ul, .error ul, .validation ul {
+	margin-left: 40px;
+}
+label.validation_error {
+	color: #D8000C;
+	background-color: #FFBABA;
+	border: 1px solid;
+	display: block;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 90%;
+}
+.notice {
+	border-color: #BDC7D8;
+	color: #1F4A75;
+	background-color: #DEEFF8;
+	background-image: url('btn/info.png');
+}
+.success {
+	color: #4F8A10;
+	background-color: #DFF2BF;
+	background-image: url('btn/success.png');
+}
+.alert {
+	color: #9F6000;
+	background-color: #FEEFB3;
+	background-image: url('btn/warning.png');
+}
+.error, #error_explanation {
+	color: #D8000C;
+	background-color: #FFBABA;
+	background-image: url('btn/error.png');
+}
+
+/*********** tabs *********************/
+#nav_tabs {
+	width: 960px;
+	height: 30px;
+	position: relative;
+	clear: both;
+	margin: 0px auto;
+}
+#ul_tabs {
+	list-style: none;
+	position: relative;
+	left: 25%;
+}
+#ul_tabs li {
+	float: left;
+	background-color: #3B5998;
+	border: solid 1px #415F9D;
+	color: white;
+}
+.left_tab {
+	border-bottom-left-radius: 6px;
+}
+.right_tab {
+	border-bottom-right-radius: 6px;
+}
+
+#ul_tabs li a:link, a:visited {
+	-webkit-transition: background-color 0.3s linear;
+	-moz-transition: background-color 0.3s linear;
+	-o-transition: background-color 0.3s linear;
+}
+#ul_tabs li a:hover, a:focus {
+	text-decoration: none;
+	background-color: #F2F2F2;
+	color: #3B5998;
+}
+#ul_tabs li a {
+	display: block;
+	font-size: 14px;
+	padding: 5px 25px 5px 25px;
+}
+#ul_tabs li.selected {
+	position: relative;
+	background-color: #F2F2F2;
+	color: #3B5998;
+	margin-right: -1px;
+	position: relative;
+	z-index: 11;
+	font-size: 20px;
+}
+
