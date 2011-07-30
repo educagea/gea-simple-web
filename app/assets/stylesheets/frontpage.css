@@ -1,104 +1,137 @@
-#full_content {
+/****************** HEADER STRUCTURE ******/
+#headerFront {
+	width: 100%;
+	height: 74px;
+	padding: 0;
+	background: #3B5998;
+	padding: 2px 0px 0px 0px;
+	color: white;
+}
+.banner_top {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3px;
+	padding-bottom: 3px;
 	position: relative;
 }
-
-#laptop_image {
+#logo_gea {
+	height: 63px;
+	float: left;
+	vertical-align: top;
+	margin-left: 10px;
+	margin-right: 20px;
+}
+#header_logo {
+	height: 64px;
+	float: left;
+	vertical-align: top;
+}
+.div_login {
+	margin-left: 200px;
+	position: relative;
+	width: 580px;
+	display: inline-block;
+	text-align: right;
+	vertical-align: top;
+	padding-top: 5px;
+	margin-top: 3px;
+}
+#sub_login {
+	margin-top: 10px;
+}
+#laptop_image, #envelope_image {
 	width: 450px;
 	position: absolute;
-top: 80px;
+	top: 80px;
 }
-
-#checks_right {
+#form_right {
 	width: 500px;
 	position: absolute;
-left: 550px;
-top: 100px;
+	left: 550px;
+	top: 100px;
 }
-
-#checks_right ul{
-	list-style-type: none;
+#form_contact_right {
+	width: 500px;
+	position: absolute;
+	left: 550px;
+	top: 60px;
 }
-
-.tick_front{
+.content_textarea, .content_email, .content_textfield {
+	width: 372px;
+}
+.content_textarea {
+	height: 287px;
+}
+.tick_front {
 	width: 50px;
 	margin-top: 10px;
 	margin-right: 10px;
 }
-
-.tick_text{
-	font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+.tick_text {
+	font-family: 'Hoefler Text', Georgia, 'Times New Roman', serif;
 	font-weight: normal;
-    font-size: 2.25em;
-	letter-spacing: .2em;
-	line-height: 1.1em;
-	margin:0px;
+	font-size: 32px;
+	letter-spacing: 3px;
+	line-height: 18px;
+	margin: 0px;
 }
-
 #big_message {
-	font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+	font-family: 'Hoefler Text', Georgia, 'Times New Roman', serif;
 	font-weight: normal;
-    font-size: 2em;
-	letter-spacing: .2em;
-	line-height: 1.1em;
-	margin:0px;
+	font-size: 32px;
+	letter-spacing: 3px;
+	line-height: 18px;
+	margin: 0px;
 	position: absolute;
 	top: 475px;
 	left: 100px;
 	color: #3B5998;
 }
-
-#nav_tabs{
-  width: 960px;
-  position: relative;
-  clear: both;
-  margin: 0px auto;	
+#nav_tabs {
+	width: 960px;
+	position: relative;
+	clear: both;
+	margin: 0px auto;
 }
-
 #ul_tabs {
 	list-style: none;
-	position:relative;
-    left:25%;
+	position: relative;
+	left: 25%;
 }
-
-#ul_tabs li{
-	float: left;	
-    background-color: #3B5998;
-    border: solid 1px #415F9D;
+#ul_tabs li {
+	float: left;
+	background-color: #3B5998;
+	border: solid 1px #415F9D;
 	color: white;
 }
-
-.left_tab{
+.left_tab {
 	border-bottom-left-radius: 6px;
 }
-
-.right_tab{
+.right_tab {
 	border-bottom-right-radius: 6px;
 }
-
-#ul_tabs li a:link, a:visited{
-  -webkit-transition: background-color 0.3s linear;  
-  -moz-transition: background-color 0.3s linear;  
-  -o-transition: background-color 0.3s linear; 
+#ul_tabs li a:link, a:visited {
+	-webkit-transition: background-color 0.3s linear;
+	-moz-transition: background-color 0.3s linear;
+	-o-transition: background-color 0.3s linear;
 }
-
-#ul_tabs li a:hover, a:focus{
+#ul_tabs li a:hover, a:focus {
 	text-decoration: none;
 	background-color: #F2F2F2;
 	color: #3B5998;
 }
-
 #ul_tabs li a {
-  display: block;
-  font-size: 14px;
-  padding: 5px 25px 5px 25px;
+	display: block;
+	font-size: 14px;
+	padding: 5px 25px 5px 25px;
 }
-
 #ul_tabs li.selected {
-  position: relative;
-  background-color: #F2F2F2;
-  color: #3B5998;
-  margin-right: -1px;
-  position: relative;
-  z-index: 11;
-  font-size: 20px;
+	position: relative;
+	background-color: #F2F2F2;
+	color: #3B5998;
+	margin-right: -1px;
+	position: relative;
+	z-index: 11;
+	font-size: 20px;
 }

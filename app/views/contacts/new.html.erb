@@ -4,17 +4,44 @@
 
 <%content_for :javascript do%>
   $("#contacto_li").addClass("selected");
+  
+  $('input[placeholder],textarea[placeholder]').placeholder();
+  
+  check_if_accepted_and_submit = function(){
+  	if($("#contact_accepted").is(':checked')){
+  	  $("#form_contact_right").submit()
+  	}
+  	else {
+  	  alert("<%=t('contact.alert')%>");
+  	}
+  }
 <%end%>
 
-    <section>
-        <article>
-            <%= form_for @contact do |f| %>
-              <label for="subject"><%= t('subject') %>:</label><p><%= f.text_field :subject, :class => "", :size => 20 %></p>
-              <label for="content"><%= t('content') %>:</label><p><%= f.text_field :content, :class => "", :size => 20 %></p>              
-              <label for="email"><%= t('email.one') %>:</label><p><%= f.email_field :email %></p>
-              <p><%= f.check_box :accepted, {}, true,false %> <%= t('accept_conditions_html', :url=>"/conditions") %></p>
-              <%= f.submit t('accept') %>
-            <%end%>
-        </article>
-    </section>
-    
+
+	<article>		
+		<div id="image_left">
+			<%=image_tag('envelope.jpg', :id=>"envelope_image")%>
+		</div>
+		
+		<div id="form_contact_right">
+			<%= form_for @contact do |f| %>
+				<div class="form_block">
+					<%= f.text_field :subject, :class=>"content_textfield", :placeholder => t('contact.subject') %>
+				</div>
+				<div class="form_block">
+					<%= f.text_area :content, :class=>"content_textarea", :placeholder => t('contact.content') %>
+				</div>
+				<div class="form_block">
+					<%= f.email_field :email, :class=>"content_email", :placeholder => t('email.one') %>
+				</div>
+				<div class="form_block">
+					<%= f.check_box :accepted, {}, true,false %> <span class="medium_size_text"><%= t('accept_conditions_html', :url=>"/conditions") %></span>
+				</div>
+				<input type="submit" value="<%=t('accept')%>" onclick="check_if_accepted_and_submit();return false;" />
+			<%end%>
+			<br style="clear:both"/>
+		</div>		
+	</article>
+
+
+

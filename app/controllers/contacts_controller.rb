@@ -3,8 +3,9 @@ class ContactsController < InheritedResources::Base
   actions :new, :create
   
   def new
-    @contact = Contact.new
-    render :layout => "frontpage"
+    new! do |format|
+      format.html { render :layout => "frontpage" }
+    end    
   end
   
 end

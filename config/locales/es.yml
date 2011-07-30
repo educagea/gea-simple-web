@@ -3,9 +3,13 @@
 
 es:
   accept: "Acceptar"
-  accept_conditions_html: He leido y acepto las <a href="%{url}"> condiciones de uso </a>
-  content: "Contenido"
+  accept_conditions_html: "He leido y acepto las <a href='%{url}' id='blue_link' target='_blank'> condiciones de uso </a>"
+  contact:    
+    alert: "Debe aceptar las condiciones de uso"
+    content: "Contenido..."
+    subject: "Asunto..."
   email:
+    example: tuemail@ejemplo.com
     one: "Email"
   footer:
     contact: "Contacto"
@@ -34,7 +38,6 @@ es:
   register:
     lost_password: "Recuperar contraseña"
     one: "Registrarse"
-  subject: "Asunto"
   web:
     name: "Mundo GEA"
     title: 

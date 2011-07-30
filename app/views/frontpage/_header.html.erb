@@ -11,14 +11,14 @@
 				<%= t('email.one') %>
 			</label>
 		</span>
-		<%= text_field_tag 'login', params[:login], :class=>"input_username" %>
+		<%= text_field_tag 'login', params[:login], :id=>"input_username" %>
 
 		<span>
 			<label for="password">
 				<%= t('password.one') %>
 			</label>
 		</span>
-		<%= password_field_tag 'password', nil, :class=>"input_username" %>
+		<%= password_field_tag 'password', nil, :id=>"input_passwd" %>
 
 		<button type="submit" class="other_blue">
 			<%= t("login")%>

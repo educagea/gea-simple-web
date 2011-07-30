@@ -2,21 +2,12 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: Arial;
+	font-family: 'Hoefler Text', Georgia, 'Times New Roman', serif;
+	font-size:15px;
+	letter-spacing: 1px;
 }
 html, body {
 	height: 100%;
-}
-.p {
-	margin: 0px;
-	padding: 0px;
-	font-size: inherit;
-	font-family: inherit;
-	font-weight: inherit;
-	text-align: inherit;
-	color: inherit;
-	line-height: inherit;
-	vertical-align: top;
 }
 p {
 	padding-top: 0px;
@@ -28,8 +19,6 @@ img {
 div {
 	margin: 0px;
 	padding: 0px;
-	font-family: Helvetica;
-	font-size: 11px;
 }
 a:link, a:visited {
 	color: inherit;
@@ -42,36 +31,30 @@ a:hover {
 	clear: both;
 	height: 0px;
 }
-h2 {
-	padding-left:10px;
-}
 header, footer, section, nav, article, aside {
 	display: block;
 }
 
+.medium_size_text {
+	font-size: 17px;
+}
 
+.form_block {
+	margin: 10px 0px 10px 0px;
+}
 /******* Main Structure SECTION***************************/
-	body {
-		font-size:1.0em;
-		width: 100%;
-		margin: 0px auto;
-	}
-	
-	#full_content {
-		min-height: 552px;
-		width: 960px;
-		position: relative;
-		clear:both;
-		margin:0px auto;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: auto;
-		margin-bottom:auto;
-		background-color: white;
-	}
-	
-	
-	
+body {
+	width: 100%;
+	margin: 0px auto;
+}
+#full_content {
+	min-height: 552px;
+	width: 960px;
+	position: relative;
+	clear: both;
+	margin: 0px auto;
+	background-color: white;
+}
 /*********** footer SECTION *********************/
 
 #footer {
@@ -97,9 +80,34 @@ header, footer, section, nav, article, aside {
 	float: left;
 	line-height: 25px;
 }
-
 #footer_logo {
 	height: 25px;
 	margin-right: 10px;
 	float: left;
+}
+/**************************placeholder jquery compatibility******************/
+/*match placeholder/watermark padding to border+padding for input element*/
+label.placeholder {
+	cursor: text;
+	padding: 4px 4px 4px 4px;
+	color: #999999;
+}
+/* html5 placeholder support */
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+	color: #999999;
+}
+input:placeholder, textarea:placeholder {
+	color: #999999;
+}
+
+#blue_link{
+	color: blue;
+}
+
+#input_username{
+	width: 182px;
+}
+
+#input_passwd{
+	width: 150px;
 }

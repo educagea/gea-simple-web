@@ -6,19 +6,26 @@
   $("#home_li").addClass("selected");
 <%end%>
 
-<div id="image_left">
-	<%=image_tag('portatil.jpg', :id=>"laptop_image")%>
-</div>
 
-<div id="checks_right">
-  <div class="tick_div">
-		<%=image_tag('tick.png', :class=>"tick_front")%><span class="tick_text"><%=t("frontpage.tick1")%></span><br/>
-		<%=image_tag('tick.png', :class=>"tick_front")%><span class="tick_text"><%=t("frontpage.tick2")%></span><br/>
-		<%=image_tag('tick.png', :class=>"tick_front")%><span class="tick_text"><%=t("frontpage.tick3")%></span><br/>
-		<%=image_tag('tick.png', :class=>"tick_front")%><span class="tick_text"><%=t("frontpage.tick4")%></span><br/>
-  </div>
-</div>
+	<article>
+		<div id="image_left">
+			<%= image_tag('portatil.jpg', :id=>"laptop_image")%>
+		</div>
+		<div id="form_right">
+			<div class="tick_div">
+				<%= image_tag('tick.png', :class=>"tick_front")%><span class="tick_text"><%= t("frontpage.tick1")%></span>
+				<br/>
+				<%= image_tag('tick.png', :class=>"tick_front")%><span class="tick_text"><%= t("frontpage.tick2")%></span>
+				<br/>
+				<%= image_tag('tick.png', :class=>"tick_front")%><span class="tick_text"><%= t("frontpage.tick3")%></span>
+				<br/>
+				<%= image_tag('tick.png', :class=>"tick_front")%><span class="tick_text"><%= t("frontpage.tick4")%></span>
+				<br/>
+			</div>
+		</div>
+		<div id="big_message">
+			<%= t("frontpage.big_message")%>
+		</div>
+	</article>
 
-<div id="big_message">
-    <%=t("frontpage.big_message")%>	
-  </div>
+    
