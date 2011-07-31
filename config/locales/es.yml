@@ -2,15 +2,28 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 es:
+  activerecord:
+    attributes:
+      contact:
+        email: ""
   accept: "Acceptar"
-  accept_conditions_html: "He leido y acepto las <a href='%{url}' id='blue_link' target='_blank'> condiciones de uso </a>"
+  accept_conditions_html: "He leido y acepto las <a href='%{url}' id='blue_link' target='_blank'> política de privacidad </a>"
   contact:    
-    alert: "Debe aceptar las condiciones de uso"
+    alert: 
+      conditions: "Debe aceptar las condiciones de uso"
+      email_blank: "Deber rellenar al menos el campo email para que nos pongamos en contacto con usted"
     content: "Contenido..."
     subject: "Asunto..."
   email:
     example: tuemail@ejemplo.com
     one: "Email"
+  error: 
+    email:
+      blank: "Debe rellenar al menos el campo email"
+      invalid: "El email no tiene el formato correcto, revise el formato y vuelva a enviar su mensaje por favor"
+    in_form: "en este formulario"
+    one: "error"
+    other: "errores"
   flash:  
     contacts:  
       create:  

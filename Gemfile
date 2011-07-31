@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0.rc4'
+gem 'rails', '3.1.0.rc5'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -17,6 +17,9 @@ gem 'jquery-rails'
 
 gem 'inherited_resources'  
 
+gem 'devise'
+gem 'cancan'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
@@ -24,7 +27,7 @@ gem 'inherited_resources'
 # gem 'capistrano'
 
 # To use debugger
-#gem 'ruby-debug19', :require => 'ruby-debug'
+gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :test do
   # Pretty printed test output

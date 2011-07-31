@@ -42,20 +42,20 @@
 }
 #laptop_image, #envelope_image {
 	width: 450px;
-	position: absolute;
-	top: 80px;
+	float: left;
+	margin-top: 80px;
 }
 #form_right {
-	width: 500px;
-	position: absolute;
-	left: 550px;
-	top: 100px;
+	width: 400px;
+	float: left;
+	margin-top: 100px;
+	margin-left: 100px;
 }
 #form_contact_right {
-	width: 500px;
-	position: absolute;
-	left: 550px;
-	top: 60px;
+	width: 400px;
+	float: left;
+	margin-left: 100px;
+	margin-top: 60px;
 }
 .content_textarea, .content_email, .content_textfield {
 	width: 372px;
@@ -82,9 +82,8 @@
 	font-size: 32px;
 	letter-spacing: 3px;
 	line-height: 18px;
-	margin: 0px;
-	position: absolute;
-	top: 475px;
-	left: 100px;
+	margin-left: 150px;
+	clear:both;
+	padding: 50px 0 50px 0;
 	color: #3B5998;
 }

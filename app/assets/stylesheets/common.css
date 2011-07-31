@@ -58,13 +58,13 @@ body {
 /*********** footer SECTION *********************/
 
 #footer {
+	clear: both;
 	height: 25px;
 	background: #3B5998;
 	padding: 2px 0px 3px 0px;
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	position: relative;
 }
 #footer ul {
 	list-style-type: none;
@@ -115,7 +115,7 @@ input:placeholder, textarea:placeholder {
 /*********** Notices SECTION *********************/
 .notice, .success, .alert, .error, .validation, #error_explanation {
 	border: 1px solid;
-	margin: 10px 0px;
+	margin: 10px 0px 10px 0px;
 	padding: 15px 10px 15px 40px;
 	background-repeat: no-repeat;
 	background-position: 10px center;
@@ -123,8 +123,9 @@ input:placeholder, textarea:placeholder {
 	margin-left: auto;
 	margin-right: auto;
 }
-.notice ul, .success ul, .alert ul, .error ul, .validation ul {
-	margin-left: 40px;
+.notice ul, .success ul, .alert ul, .error ul, .validation ul, #error_explanation ul {
+	margin-left: 20px;
+	list-style-type: none;
 }
 label.validation_error {
 	color: #D8000C;
