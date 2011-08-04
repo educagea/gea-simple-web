@@ -1,0 +1,19 @@
+	
+<div class="center_medium_div_with_borders">
+	<div class="form_title"><%=t('devise.change_your_passwd')%></div>
+	
+	<%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :put }) do |f| %>
+	  <%= devise_error_messages! %>
+	  <%= f.hidden_field :reset_password_token %>
+	
+	  <p><%= f.label :password, t('devise.new_passwd') %><br />
+	  <%= f.password_field :password %></p>
+	
+	  <p><%= f.label :password_confirmation, t('devise.confirm_new_passwd') %><br />
+	  <%= f.password_field :password_confirmation %></p>
+	
+	  <p><%= f.submit <%=t('devise.change_my_passwd')%> %></p>
+	<% end %>
+	
+	<%= render :partial => "devise/shared/links" %>
+</div>

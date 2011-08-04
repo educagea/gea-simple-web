@@ -1,14 +1,43 @@
+<!-- HTML5 DOCTYPE -->
 <!DOCTYPE html>
-<html>
-<head>
-  <title>GeaSimpleWeb</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title><%= yield(:title).empty? ? t('frontpage.title') : yield(:title)%></title>
+		<meta name="keywords" content="t('meta.keywords')%>" >
+		<meta name="description" content= "t('meta.description')%>" >
+		<%= stylesheet_link_tag "common","frontpage", :media => "screen, projection" %>
+		<%= javascript_include_tag 'jquery', 'jquery_ujs' %>
+		<%= javascript_include_tag 'jquery.placeholder' %>
+		<%= favicon_link_tag "favicon.ico" %>
 
-<%= yield %>
-
-</body>
+		<% if protect_against_forgery? %>
+		  <%= csrf_meta_tag %>
+		<% end %>
+		<script type="text/javascript" >
+			$(document).ready(function() {
+			  <%= yield :javascript%>
+			});
+		</script>
+	</head>
+	<body>
+		<header>
+			<%= render :partial => "layouts/header" %>
+		</header>
+		<section>
+			<%= render :partial => "layouts/navbar" %>
+		</section>
+		<section id="full_content">
+			
+			<% flash.each do |key, msg| -%>
+			  <%= content_tag :div, msg, :class => key, :id => 'flash' %>
+			<% end -%>
+			
+			<%= yield %>
+		</section>
+		<footer id="frontpage_footer">
+			<%= render :partial => "layouts/footer" %>
+		</footer>
+		</div>
 </html>
+

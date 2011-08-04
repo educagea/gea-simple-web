@@ -8,6 +8,7 @@ es:
         email: ""
   accept: "Acceptar"
   accept_conditions_html: "He leido y acepto las <a href='%{url}' id='blue_link' target='_blank'> política de privacidad </a>"
+  back: "Atrás"
   contact:    
     alert: 
       conditions: "Debe aceptar las condiciones de uso"
@@ -17,6 +18,32 @@ es:
   email:
     example: tuemail@ejemplo.com
     one: "Email"
+  devise:
+    blank_for_no_change: "dejar en blanco si no se quiere cambiar"
+    cancel_account: "Cancelar mi cuenta"
+    change_my_passwd: "Cambiar mi contraseña"
+    change_your_passwd: "Cambiar tu contraseña"
+    confirm_account: "Confirmar mi cuenta"
+    confirm_instr: "¿No recibiste las instrucciones de confirmación de la cuenta?"
+    confirm_new_passwd: "Confirmar nueva contraseña"
+    email: "Email"
+    email_confirm_account: "Puedes confirmar tu cuenta con el link de debajo"
+    forgot_passwd: "¿Olvidaste la contraseña?"
+    hello: "Hola"
+    ignore_email: "Si tú no has solicitado esto, por favor ignora este email"
+    new_passwd: "Nueva contraseña"
+    passwd: "Contraseña"
+    passwd_conf: "Repetir contraseña"
+    password_will_change: "Tu contraseña no cambiará hasta que no visites el link de arriba y la establezcas de nuevo"
+    sign_in: "Entrar"
+    sign_in_form_title: "Entrar en la aplicación"
+    sign_up: "Registrarse"
+    remember_me: "Recordarme"
+    resend_conf_instr: "Reenviar las instrucciones de confirmación de la cuenta"
+    resend_button: "Reenviar"
+    reset_passwd_button: "Solicitar"
+    update: "Actualizar"
+    welcome: "Bienvenido"
   error: 
     email:
       blank: "Debe rellenar al menos el campo email"
@@ -50,11 +77,10 @@ es:
   meta:
     description: "Web de cursos online de GEA"
     keywords: "Cursos online, Formación virtual, Gestión de la educación Autónoma"
-  password:
-    one: "Contraseña"
   register:
     lost_password: "Recuperar contraseña"
     one: "Registrarse"
+  sure: "Está seguro?"
   web:
     name: "Mundo GEA"
     title: 

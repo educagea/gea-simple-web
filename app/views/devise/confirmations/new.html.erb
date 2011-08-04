@@ -1,0 +1,16 @@
+
+<div class="center_medium_div_with_borders">
+	<div class="form_title"><%=t('devise.resend_conf_instr')%></div>
+	
+	<%= form_for(resource, :as => resource_name, :url => confirmation_path(resource_name), :html => { :method => :post }) do |f| %>
+	  <%= devise_error_messages! %>
+	
+	  <p><%= f.label :email %><br />
+	  <%= f.email_field :email %></p>
+	
+	  <p><%= f.submit t('devise.resend_button') %></p>
+	<% end %>
+	
+	<%= render :partial => "devise/shared/links" %>
+</div>
+

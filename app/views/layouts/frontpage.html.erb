@@ -7,12 +7,12 @@
 		<meta name="keywords" content="t('meta.keywords')%>" >
 		<meta name="description" content= "t('meta.description')%>" >
 		<%= stylesheet_link_tag "common","frontpage", :media => "screen, projection" %>
-		<%= javascript_include_tag 'jquery' %>
+		<%= javascript_include_tag 'jquery', 'jquery_ujs' %>
 		<%= javascript_include_tag 'jquery.placeholder' %>
 		<%= favicon_link_tag "favicon.ico" %>
 
 		<% if protect_against_forgery? %>
-		<%= csrf_meta_tag %>
+		  <%= csrf_meta_tag %>
 		<% end %>
 		<script type="text/javascript" >
 			$(document).ready(function() {
@@ -36,7 +36,7 @@
 			<%= yield %>
 		</section>
 		<footer id="frontpage_footer">
-			<%= render :partial => "frontpage/footer" %>
+			<%= render :partial => "layouts/footer" %>
 		</footer>
 		</div>
 </html>

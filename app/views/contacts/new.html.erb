@@ -4,7 +4,7 @@
 
 <%content_for :javascript do%>
   $("#contacto_li").addClass("selected");
-  
+  $("#contacto_li a").removeClass("clear_text");
   $('input[placeholder],textarea[placeholder]').placeholder();
   
   check_if_accepted_and_submit = function(){
