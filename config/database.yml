@@ -13,7 +13,7 @@ development:
   encoding: unicode
   database: gea_development
   pool: 5
-  username: gea
+  username: educagea
   password: gea
 
   # Connect on a TCP socket. Omitted by default since the client uses a
