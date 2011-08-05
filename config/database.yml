@@ -39,13 +39,13 @@ test:
   encoding: unicode
   database: gea_test
   pool: 5
-  username: gea
+  username: educagea
   password: gea
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: gea_production
+  database: gea_development
   pool: 5
-  username: gea
+  username: educagea
   password: gea

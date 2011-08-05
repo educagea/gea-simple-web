@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110804160549) do
+ActiveRecord::Schema.define(:version => 20110805085919) do
 
   create_table "contacts", :force => true do |t|
     t.text     "subject"
@@ -19,6 +19,17 @@ ActiveRecord::Schema.define(:version => 20110804160549) do
     t.text     "content"
     t.string   "email"
     t.boolean  "accepted"
+  end
+
+  create_table "roles", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "roles_users", :id => false, :force => true do |t|
+    t.integer "role_id"
+    t.integer "user_id"
   end
 
   create_table "users", :force => true do |t|
