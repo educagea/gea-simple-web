@@ -1,27 +1,32 @@
 <div id="headerFront">
 	<div id="banner" class="banner_top">
 		<div id="logo_gea">
-			<%= link_to(image_tag('logo_gea.gif', :alt => t('logo.alt'), :id=>"header_logo"), '/'); %>
+			<%= link_to(image_tag('logo_gea.png', :alt => t('logo.alt'), :id=>"header_logo"), '/'); %>
 		</div>
 	</div>
+	
 	<div class="div_login">
 		
-	<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-		
-		<%= f.label t('devise.email') %>
-		<%= f.email_field :email, :id=>"input_email" %>
-
-		<%= f.label t('devise.passwd') %>
-	    <%= f.password_field :password, :id=>"input_passwd" %>
-
-		<%= f.submit t('devise.sign_in') %>
-	<% end -%>
+		<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+			<table cellspacing="0">
+			  <tbody>
+			  	<tr>
+			  		<td><%= f.label t('devise.email') %></td>
+			  		<td class="second_column"><%= f.label t('devise.passwd') %></td>
+			  	</tr>
+			  	<tr>
+			  		<td><%= f.email_field :email, :id=>"input_email" %></td>
+			  		<td class="second_column"><%= f.password_field :password, :id=>"input_passwd" %></td>
+			  		<td class="second_column"><%= f.submit t('devise.sign_in') %></td>
+			  	</tr>
+			  	<tr>
+			  		<td class="sub_login"><%= link_to t('devise.sign_up'), new_registration_path(resource_name), :class => "register_link" %></td>
+			  		<td class="sub_login second_column" colspan="2"><%= link_to t('devise.forgot_passwd'), new_password_path(resource_name), :class => "register_link" %></td>
+			  	</tr>
+			  </tbody>	
+			</table>
 	
-		<div id="sub_login">
-			<%= link_to t('devise.sign_up'), new_registration_path(resource_name), :class => "register_link clear_text" %>
-			<span>|</span>
-			<%= link_to t('devise.forgot_passwd'), new_password_path(resource_name), :class => "register_link clear_text" %>
-		</div>
+		<% end -%>		
 		<%= link_to "Sign out", destroy_user_session_path, :method => 'delete' %>
 	</div>
 
