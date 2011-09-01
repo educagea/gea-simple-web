@@ -41,7 +41,7 @@
 					<%= f.email_field :email, :class=>"content_email", :placeholder => t('email.one') %>
 				</div>
 				<div class="form_block">
-					<%= f.check_box :accepted, {}, true,false %> <span class="medium_size_text"><%= t('accept_conditions_html', :url=>"/politica_privacidad") %></span>
+					<%= f.check_box :accepted, {}, true,false %> <span><%= t('accept_conditions_html', :url=>"/privacy_policy") %></span>
 				</div>
 				<input type="submit" value="<%=t('accept')%>" onclick="check_if_accepted_and_submit();return false;" />
 			<%end%>
