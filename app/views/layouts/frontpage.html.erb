@@ -6,9 +6,9 @@
 		<title><%= yield(:title).empty? ? t('frontpage.title') : yield(:title)%></title>
 		<meta name="keywords" content="t('meta.keywords')%>" >
 		<meta name="description" content= "t('meta.description')%>" >
-		<%= stylesheet_link_tag "common","frontpage", :media => "screen, projection" %>
+		<%= stylesheet_link_tag "common", :media => "screen, projection" %>
 		<%= javascript_include_tag 'jquery', 'jquery_ujs' %>
-		<%= javascript_include_tag 'jquery.placeholder' %>
+		<%= javascript_include_tag 'jquery.placeholder', 'frontpage' %>
 		<%= favicon_link_tag "favicon.ico" %>
 
 		<% if protect_against_forgery? %>

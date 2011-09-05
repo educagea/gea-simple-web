@@ -1,0 +1,30 @@
+<% content_for :title do%>
+  <%= t('web.title.main') %>
+<%end%>
+
+
+<%content_for :javascript do%>
+  $("#cursos_li").addClass("selected");
+  $("#cursos_li a").removeClass("clear_text");
+<%end%>
+
+    <section>
+        <article>
+            <div id="half_left">
+              <div class="left_content" id="main_left">
+              	<%= image_tag('box_manipulador.jpg', :class=>"image_half_left")%>
+              	<div class="big_text tab_content_title"><%= t("frontpage.courses_tab.tick1")%></div>
+              	<div class="medium_text tab_content_title">-<%= t("frontpage.courses_tab.tick2")%></div>
+              	<div class="medium_text tab_content_title">-<%= t("frontpage.courses_tab.tick3")%></div>
+              </div>
+            </div>
+            <div id="half_right" >
+				<div class="right_content" id="main_right">
+					<%= image_tag('box_transportista.jpg', :class=>"image_half_left")%>
+					<div class="big_text tab_content_title"><%= t("frontpage.courses_tab.tick1")%></div>
+              		<div class="medium_text tab_content_title">-<%= t("frontpage.courses_tab.tick2")%></div>
+              		<div class="medium_text tab_content_title">-<%= t("frontpage.courses_tab.tick3")%></div>
+				</div>
+			</div>
+        </article>
+    </section>

@@ -2,7 +2,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: 'Hoefler Text', Georgia, 'Times New Roman', serif;
+	font-family: "Arial", sans-serif;
 	font-size:15px;
 	letter-spacing: 1px;
 }
@@ -36,24 +36,37 @@ a.clear_text {
 	clear: both;
 	height: 0px;
 }
+
 header, footer, section, nav, article, aside {
 	display: block;
 }
 
-.medium_size_text {
-	font-size: 17px;
-}
+/****************TEXT CLASSES**************************/
 
-.form_block {
-	margin: 10px 0px 10px 0px;
-}
 
-.form_title{
-	font-size: 17px;
+.big_text {
 	font-weight: bold;
-	margin-bottom: 10px;
+	font-size: 26px;
+	letter-spacing: 3px;
 	color: #3B5998;
+	margin-bottom: 5px;
 }
+.medium_text {
+	font-weight: bold;
+	font-size: 22px;
+	letter-spacing: 3px;
+	color: #3B5998;
+	margin-bottom: 5px;
+}
+
+.small_text {
+	font-weight: bold;
+	font-size: 15px;
+	letter-spacing: 3px;
+	color: #3B5998;
+	margin-bottom: 5px;
+}
+
 /******* Main Structure SECTION***************************/
 body {
 	width: 100%;
@@ -61,12 +74,47 @@ body {
 }
 #full_content {
 	min-height: 552px;
-	width: 960px;
+	width: 980px;
 	position: relative;
 	clear: both;
 	margin: 0px auto;
 	background-color: white;
 }
+
+/*********** header SECTION *********************/
+#header_app {
+	width: 100%;
+	height: 40px;
+	padding: 0;
+	background: #3B5998;
+	padding: 2px 0px 0px 0px;
+	color: white;
+}
+
+.banner_top_app {
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3px;
+	padding-bottom: 3px;
+	position: relative;
+}
+
+#logo_gea_app {
+	height: 25px;
+	margin-right: 10px;
+	float: left;
+	vertical-align: top;
+	margin-left: 10px;
+	margin-right: 20px;
+}
+
+#header_logo_app {
+	height: 25px;
+	margin-right: 10px;
+	float: left;
+}
+
 /*********** footer SECTION *********************/
 
 #footer {
@@ -97,42 +145,6 @@ body {
 	margin-right: 10px;
 	float: left;
 }
-
-/*********** header SECTION *********************/
-#header_app {
-	width: 100%;
-	height: 40px;
-	padding: 0;
-	background: #3B5998;
-	padding: 2px 0px 0px 0px;
-	color: white;
-}
-
-.banner_top_app {
-	width: 960px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 3px;
-	padding-bottom: 3px;
-	position: relative;
-}
-
-#logo_gea_app {
-	height: 25px;
-	margin-right: 10px;
-	float: left;
-	vertical-align: top;
-	margin-left: 10px;
-	margin-right: 20px;
-}
-
-#header_logo_app {
-	height: 25px;
-	margin-right: 10px;
-	float: left;
-}
-
-
 
 /**************************placeholder jquery compatibility******************/
 /*match placeholder/watermark padding to border+padding for input element*/
@@ -209,26 +221,31 @@ label.validation_error {
 
 /*********** tabs *********************/
 #nav_tabs {
-	width: 960px;
+	width: 980px;
 	height: 30px;
 	position: relative;
 	clear: both;
 	margin: 0px auto;
 }
+
 #ul_tabs {
 	list-style: none;
 	position: relative;
-	left: 25%;
+	left: 18%;
 }
+
 #ul_tabs li {
 	float: left;
 	background-color: #3B5998;
-	border: solid 1px #415F9D;
+	border: solid 1px #AACCCC;
 	color: white;
+	height: 30px;
 }
+
 .left_tab {
 	border-bottom-left-radius: 6px;
 }
+
 .right_tab {
 	border-bottom-right-radius: 6px;
 }
@@ -238,16 +255,18 @@ label.validation_error {
 	-moz-transition: background-color 0.3s linear;
 	-o-transition: background-color 0.3s linear;
 }
+
 #ul_tabs li a:hover, a:focus {
 	text-decoration: none;
 	background-color: #F2F2F2;
 	color: #3B5998;
 }
+
 #ul_tabs li a {
 	display: block;
-	font-size: 14px;
 	padding: 5px 25px 5px 25px;
 }
+
 #ul_tabs li.selected {
 	position: relative;
 	background-color: #F2F2F2;
@@ -255,7 +274,6 @@ label.validation_error {
 	margin-right: -1px;
 	position: relative;
 	z-index: 11;
-	font-size: 20px;
 }
 
 
@@ -279,7 +297,196 @@ label.validation_error {
 
 
 
+/**************************FRONTPAGE************************/
 
+#headerFront {
+	width: 100%;
+	height: 129px;
+	padding: 0;
+	background: #3B5998;
+	padding: 2px 0px 0px 0px;
+	color: white;
+}
+
+.banner_top {
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+#logo_gea {
+	height: 129px;
+	float: left;
+	vertical-align: top;
+}
+
+#header_logo {
+	height: 129px;
+	float: left;
+	vertical-align: top;
+}
+
+.div_login {
+	margin-left: 188px;
+	position: relative;
+	width: 440px;
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 5px;
+	margin-top: 20px;
+}
+
+.sub_login {
+	padding-top: 5px;
+}
+
+.sub_login a{
+	color: #98A9CA;
+}
+
+.second_column{
+	padding-left: 14px;
+}
+
+#envelope_image {
+	width: 450px;
+	float: left;
+	margin-top: 80px;
+}
+
+#half_left{
+	width: 488px;
+	float: left;
+	border-right: 3px solid #98A9CA;
+	min-height: 540px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+#half_right {
+	width: 488px;
+	float: left;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+#frontpage_upper_content_left{
+	margin-bottom: 0px;
+}
+
+#frontpage_upper_content_right{
+	margin-bottom: 48px;
+}
+
+#form_contact_right {
+	width: 400px;
+	float: left;
+	margin-left: 100px;
+	margin-top: 60px;
+}
+.content_textarea, .content_email, .content_textfield {
+	width: 372px;
+}
+.content_textarea {
+	height: 287px;
+}
+.plan_list_image {
+	width: 50px;
+	margin-right: 10px;
+	float: left;
+}
+
+.plan_list_small_text {
+   color: #3B5998;
+}
+
+.tick_text{
+	color: #999999;
+	padding-top: 10px;
+}
+
+.tick_small_text{
+	color: #999999;
+}
+
+.sub_tick_li{
+	padding-left: 20px;
+}
+
+.big_blue_text {	
+	font-weight: normal;
+	font-size: 32px;
+	letter-spacing: 3px;
+	color: #3B5998;
+}
+.vertical_text{
+	-moz-transform:rotate(270deg); 
+	-moz-transform-origin: bottom left;
+	-webkit-transform: rotate(270deg);
+	-webkit-transform-origin: bottom left;
+	-o-transform: rotate(270deg);
+	-o-transform-origin:  bottom left;
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.plan_list{
+	padding-left: 10px;
+}
+
+#vertical1{
+	width: 200px;
+	left: 100px;
+    position: relative;
+    top: -100px;
+}
+#vertical2{
+	position: relative;
+	left: 100px;
+	top: -50px;
+	width: 200px;
+}
+.image_half_left{
+	width: 300px;
+	margin-left: 94px;
+}
+.image_half_right{
+	width: 250px;
+	margin-left: 119px;
+	margin-top: 20px;
+}
+
+.ul_plan_list{
+	list-style-type: none;
+}
+
+.li_plan_list{
+	height: 80px;
+}
+
+.closing_x{
+	padding-left: 10px;
+}
+
+.tab_content_title{
+	padding: 10px 0 0 20px;
+}
+
+.tab_content_content{
+	padding-left: 20px;
+}
+
+
+.form_block {
+	margin: 10px 0px 10px 0px;
+}
+
+.form_title{
+	font-size: 17px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #3B5998;
+}
 
 
 

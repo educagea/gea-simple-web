@@ -8,12 +8,19 @@
 #   gem install pg
 #       Choose the win32 build.
 #       Install PostgreSQL and put its /bin directory on your path.
+
+#to access via command line
+#>sudo su - postgres
+#>psql
+#\? ->muestra los comandos de postgres que se pueden ejecutar
+#\c gea_development -> conecta a base de datos gea_development
+#\d -> lista tablas
 development:
   adapter: postgresql
   encoding: unicode
   database: gea_development
   pool: 5
-  username: educagea
+  username: gea
   password: gea
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -39,7 +46,7 @@ test:
   encoding: unicode
   database: gea_test
   pool: 5
-  username: educagea
+  username: gea
   password: gea
 
 production:
@@ -47,5 +54,5 @@ production:
   encoding: unicode
   database: gea_development
   pool: 5
-  username: educagea
+  username: gea
   password: gea
