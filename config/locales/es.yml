@@ -71,7 +71,7 @@ es:
       tick4: "Transportista"
       tick5: "10 horas"
       tick6: "Certificado oficial"
-    enterprise: "Empresas y entidades"
+    enterprise: "Entidades"
     gea_world: 
       title: "Mundo GEA"
       tick1: "GEA Gestión de la Educación Autónoma"
@@ -153,7 +153,7 @@ es:
   logo:
     alt: "GEA Formación - Ir a la página principal"
   meta:
-    description: "Web de cursos online de GEA"
+    description: "Mundogea es una empresa que se dedica a la formación desde un punto de vista innovador, comprueba nuestro catálogo de cursos."
     keywords: "Cursos online, Formación virtual, Gestión de la educación Autónoma"
   register:
     lost_password: "Recuperar contraseña"

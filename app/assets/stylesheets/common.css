@@ -231,7 +231,9 @@ label.validation_error {
 #ul_tabs {
 	list-style: none;
 	position: relative;
-	left: 18%;
+	left: 0%;
+	width: 600px;
+	float: left;
 }
 
 #ul_tabs li {
@@ -346,7 +348,7 @@ label.validation_error {
 }
 
 .second_column{
-	padding-left: 14px;
+	padding-left: 10px;
 }
 
 #envelope_image {
@@ -376,7 +378,7 @@ label.validation_error {
 }
 
 #frontpage_upper_content_right{
-	margin-bottom: 48px;
+	margin-bottom: 12px;
 }
 
 #form_contact_right {
@@ -395,6 +397,10 @@ label.validation_error {
 	width: 50px;
 	margin-right: 10px;
 	float: left;
+}
+
+.plan_list_image_right{
+	margin-left: 30px;
 }
 
 .plan_list_small_text {
@@ -420,6 +426,12 @@ label.validation_error {
 	letter-spacing: 3px;
 	color: #3B5998;
 }
+.big_green_text {	
+	font-weight: normal;
+	font-size: 32px;
+	letter-spacing: 3px;
+	color: #83C905;
+}
 .vertical_text{
 	-moz-transform:rotate(270deg); 
 	-moz-transform-origin: bottom left;
@@ -436,9 +448,9 @@ label.validation_error {
 
 #vertical1{
 	width: 200px;
-	left: 100px;
+	left: 80px;
     position: relative;
-    top: -100px;
+    top: -80px;
 }
 #vertical2{
 	position: relative;
@@ -453,7 +465,6 @@ label.validation_error {
 .image_half_right{
 	width: 250px;
 	margin-left: 119px;
-	margin-top: 20px;
 }
 
 .ul_plan_list{
@@ -488,7 +499,14 @@ label.validation_error {
 	color: #3B5998;
 }
 
-
+#facebook_iframe{
+	border:none; 
+	overflow:hidden; 
+	width:120px; 
+	height:21px;
+	float: right;
+	margin-top: 3px;
+}
 
 
 
