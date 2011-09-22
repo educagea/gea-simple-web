@@ -37,6 +37,10 @@ a.clear_text {
 	height: 0px;
 }
 
+#wrap {min-height: 100%;}
+
+#main {overflow:auto; padding-bottom: 25px;}  /* must be same height as the footer */
+
 header, footer, section, nav, article, aside {
 	display: block;
 }
@@ -120,16 +124,20 @@ body {
 #footer {
 	clear: both;
 	height: 25px;
+	margin-top: -25px; /* negative value of footer height */
 	background: #3B5998;
 	padding: 2px 0px 3px 0px;
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;	
 }
 #footer ul {
 	list-style-type: none;
 	margin: auto;
-	width: 560px;
+	width: 980px;
+	left: 10%;
+	position: relative;
 }
 #footer ul li {
 	display: inline-block;
@@ -232,7 +240,7 @@ label.validation_error {
 	list-style: none;
 	position: relative;
 	left: 0%;
-	width: 600px;
+	width: 500px;
 	float: left;
 }
 
@@ -278,6 +286,36 @@ label.validation_error {
 	z-index: 11;
 }
 
+/*********************** social links **************/
+
+#ul_social_links{
+	list-style: none;
+	position: relative;
+	float: left;
+	width: 480px;
+}
+
+.social_li{
+	display: inline; 
+	height:32px;
+	line-height:32px;
+	float: right;
+	margin-left: 8px;
+}
+
+.social_a_in_navbar{	
+	display: inline; 
+	height:32px;
+}
+
+.social_image_in_navbar{
+	height: 32px;
+	vertical-align: middle;
+}
+
+.social_text_in_navbar{
+	line-height:32px;
+}
 
 /*********** DEVISE *********************/
 .center_medium_div_with_borders {
@@ -332,7 +370,7 @@ label.validation_error {
 .div_login {
 	margin-left: 188px;
 	position: relative;
-	width: 440px;
+	width: 450px;
 	display: inline-block;
 	vertical-align: top;
 	padding-top: 5px;
@@ -499,15 +537,9 @@ label.validation_error {
 	color: #3B5998;
 }
 
-#facebook_iframe{
-	border:none; 
-	overflow:hidden; 
-	width:120px; 
-	height:21px;
+#frontpage_login{
 	float: right;
-	margin-top: 3px;
 }
-
 
 
 

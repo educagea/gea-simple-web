@@ -8,7 +8,7 @@
 	<div class="div_login">
 		
 		<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-			<table cellspacing="0">
+			<table cellspacing="0" id="frontpage_login">
 			  <tbody>
 			  	<tr>
 			  		<td><%= f.label t('devise.email') %></td>

@@ -9,12 +9,34 @@
             <li class="section" id="gea_world_li">
                 <a href="/gea_world" class="clear_text"><%=t("frontpage.gea_world.title")%></a>
             </li>
-            <li class="section" id="cursos_li">
+            <li class="section right_tab" id="cursos_li">
                 <a href="/courses" class="clear_text"><%=t("frontpage.courses_tab.title")%></a>
             </li>
-            <li class="section right_tab" id="contacto_li">
-                <a href="/contacts/new" class="clear_text"><%=t("frontpage.contact_tab.title")%></a>
-            </li>
      </ul>
-     <iframe src="//www.facebook.com/plugins/like.php?app_id=224990917555373&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpages%2Fmundogea%2F265352206816974&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21" scrolling="no" frameborder="0" id="facebook_iframe" allowTransparency="true"></iframe>
+     <ul id="ul_social_links">
+     	   <li class="social_li" id="blogger_li">     	   	    
+                <a href="/blogger" class="social_a_in_navbar">                	
+                	<%= image_tag('social_icons/blogger.png', :class=>"social_image_in_navbar")%>
+                	<span class="social_text_in_navbar"><%=t("frontpage.social_icons.blogger")%></span>
+                </a>
+           </li>
+           <li class="social_li" id="twitter_li">     	   	    
+                <a href="http://twitter.com/mundogea" class="social_a_in_navbar" target="_blank">                	
+                	<%= image_tag('social_icons/twitter.png', :class=>"social_image_in_navbar")%>
+                	<span class="social_text_in_navbar"><%=t("frontpage.social_icons.twitter")%></span>
+                </a>
+           </li>
+           <li class="social_li" id="facebook_li">     	   	    
+                <a href="https://www.facebook.com/pages/mundogea/265352206816974" class="social_a_in_navbar" target="_blank">                	
+                	<%= image_tag('social_icons/facebook.png', :class=>"social_image_in_navbar")%>
+                	<span class="social_text_in_navbar"><%=t("frontpage.social_icons.facebook")%></span>
+                </a>
+           </li>
+     	   <li class="social_li" id="contacto_li">     	   	    
+                <a href="/contacts/new" class="social_a_in_navbar">                	
+                	<%= image_tag('social_icons/gmail.png', :class=>"social_image_in_navbar")%>
+                	<span class="social_text_in_navbar"><%=t("frontpage.social_icons.contact")%></span>
+                </a>
+           </li>           
+     </ul>
 </nav>

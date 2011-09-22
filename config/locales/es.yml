@@ -158,6 +158,11 @@ es:
   register:
     lost_password: "Recuperar contraseña"
     one: "Registrarse"
+  social_icons:
+    blogger: "Blogger"
+    contact: "Contacto"
+    facebook: "facebook"
+    twitter: "twitter"
   sure: "Está seguro?"
   web:
     name: "Mundo GEA"
