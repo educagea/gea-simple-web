@@ -37,9 +37,12 @@ a.clear_text {
 	height: 0px;
 }
 
-#wrap {min-height: 100%;}
+#wrap {
+	min-height: 100%;
+    width: 100%;   /*for ie*/
+	}
 
-#main {overflow:auto; padding-bottom: 25px;}  /* must be same height as the footer */
+#main {overflow:auto; padding-bottom: 30px;}  /* must be same height as the footer */
 
 header, footer, section, nav, article, aside {
 	display: block;
@@ -124,7 +127,7 @@ body {
 #footer {
 	clear: both;
 	height: 25px;
-	margin-top: -25px; /* negative value of footer height */
+	margin-top: -30px; /* negative value of footer height + padding */
 	background: #3B5998;
 	padding: 2px 0px 3px 0px;
 	width: 100%;
@@ -135,13 +138,13 @@ body {
 #footer ul {
 	list-style-type: none;
 	margin: auto;
-	width: 980px;
-	left: 10%;
+	width: 600px;
+	left: 0%;
 	position: relative;
 }
 #footer ul li {
 	display: inline-block;
-	margin-right: 0.25em;
+	margin-right: 4px;
 	position: relative;
 	font-weight: bold;
 	color: white;

@@ -1,0 +1,15 @@
+html {
+margin: 0px;
+padding: 0px;
+margin-left: 0%;
+}
+
+#vertical2 {
+	top: -200px;
+	left: 50px;
+}
+
+#vertical1 {
+	top: -200px;
+	left: 40px;
+}
