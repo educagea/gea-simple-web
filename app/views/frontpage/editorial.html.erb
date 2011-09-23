@@ -1,0 +1,24 @@
+<% content_for :title do%>
+  <%= t('web.title.main') %>
+<%end%>
+
+<%content_for :javascript do%>
+  $("#editorial_li").addClass("selected");
+  $("#editorial_li a").removeClass("clear_text");
+<%end%>
+
+    <section>
+        <article>
+            <div id="half_left">
+              <div class="left_content" id="main_left">
+              	<%= image_tag('construccion.jpg', :class=>"")%>
+              </div>
+            </div>
+            <div id="half_right" >
+				<div class="right_content" id="main_right">
+					<div class="big_text tab_content_title">En construcción.</div>
+					<div class="plan_list_small_text tab_content_content">Permanece atento, pronto publicaremos esta sección</div>
+				</div>
+			</div>
+        </article>
+    </section>

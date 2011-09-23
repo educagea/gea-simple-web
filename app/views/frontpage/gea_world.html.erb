@@ -11,15 +11,55 @@
         <article>
             <div id="half_left">
               <div class="left_content" id="main_left">
-              	<%= image_tag('mundo_gea.jpg', :class=>"")%>
+              	<%= image_tag('logo_sombra.png', :id=>"gea_world_image")%>
+              	
+              	<a href="javascript:show_info_in_mundogea(1)" title="<%= t("frontpage.help_click")%>">
+              		<div id="gea_world_link1"><%= t("frontpage.gea_world.link1")%></div>
+              	</a>
+              	<a href="javascript:show_info_in_mundogea(2)" title="<%= t("frontpage.help_click")%>">
+              		<div id="gea_world_link2"><%= t("frontpage.gea_world.link2")%></div>
+              	</a>
+              	<a href="javascript:show_info_in_mundogea(3)" title="<%= t("frontpage.help_click")%>">
+              		<div id="gea_world_link3"><%= t("frontpage.gea_world.link3")%></div>
+              	</a>
+              	<a href="javascript:show_info_in_mundogea(4)" title="<%= t("frontpage.help_click")%>">
+              		<div id="gea_world_link4"><%= t("frontpage.gea_world.link4")%></div>
+              	</a>
+              	<a href="javascript:show_info_in_mundogea(5)" title="<%= t("frontpage.help_click")%>">
+              		<div id="gea_world_link5"><%= t("frontpage.gea_world.link5")%></div>
+              	</a>	
               </div>
             </div>
             <div id="half_right" >
-				<div class="right_content" id="main_right">
-					<div class="big_text tab_content_title"><%= t("frontpage.gea_world.tick1")%></div>
-					<div class="plan_list_small_text tab_content_content"><%= t("frontpage.gea_world.tick2")%></div>
-					<div class="big_text tab_content_title"><%= t("frontpage.gea_world.tick3")%></div>
-					<div class="plan_list_small_text tab_content_content"><%= t("frontpage.gea_world.tick4")%></div>
+				<div class="right_content" id="mundogea_content1">
+					<div class="big_text mundogea_title"><%= t("frontpage.gea_world.link1")%></div>
+					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link1_p1")%></div>
+					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link1_p2")%></div>	
+					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link1_p3")%></div>						
+				</div>
+				<div class="right_content" id="mundogea_content2" style="display:none">
+					<div class="big_text mundogea_title"><%= t("frontpage.gea_world.link2")%></div>
+					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link2_p1")%></div>
+					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link2_p2")%></div>	
+					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link2_p3")%></div>
+					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link2_p4")%></div>						
+				</div>
+				<div class="right_content" id="mundogea_content3" style="display:none">
+					<div class="big_text mundogea_title"><%= t("frontpage.gea_world.link3")%></div>
+					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link3_p1")%></div>
+					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link3_p2")%></div>	
+					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link3_p3")%></div>
+					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link3_p4")%></div>						
+				</div>
+				<div class="right_content" id="mundogea_content4" style="display:none">
+					<div class="big_text mundogea_title"><%= t("frontpage.gea_world.link4")%></div>
+					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link4_p1")%></div>						
+				</div>
+				<div class="right_content" id="mundogea_content5" style="display:none">
+					<div class="big_text mundogea_title"><%= t("frontpage.gea_world.link5")%></div>
+					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link5_p1")%></div>
+					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link5_p2")%></div>	
+					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link5_p3")%></div>						
 				</div>
 			</div>
         </article>

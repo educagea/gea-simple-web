@@ -24,3 +24,8 @@ back_to_main = function(){
 	$("#main_left").show();
 	$("#main_right").show();
 };
+
+show_info_in_mundogea = function(item_number){
+	$(".right_content").hide();
+	$("#mundogea_content"+item_number).show();
+}
