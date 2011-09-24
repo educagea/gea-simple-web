@@ -26,6 +26,8 @@ back_to_main = function(){
 };
 
 show_info_in_mundogea = function(item_number){
+	$(".ball_link").removeClass("ball_link_selected");
+	$("#gea_world_link"+item_number).addClass("ball_link_selected");
 	$(".right_content").hide();
 	$("#mundogea_content"+item_number).show();
 }
