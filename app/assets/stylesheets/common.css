@@ -596,3 +596,7 @@ label.validation_error {
 .mundogea_content_lastline{
 	text-align: center;
 }
+
+#all_but_header{
+	width: 100%;
+}
