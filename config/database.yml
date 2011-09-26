@@ -55,4 +55,4 @@ production:
   database: gea_development
   pool: 5
   username: gea
-  password: gea
+  password: ENV['DB_PASS']

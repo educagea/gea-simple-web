@@ -172,9 +172,12 @@ es:
     one: "Registrarse"
   social_icons:
     blogger: "Blogger"
+    blogger_title: "Sigue nuestro blog"
     contact: "Contacto"
     facebook: "facebook"
+    facebook_title: "Síguenos en facebook"
     twitter: "twitter"
+    twitter_title: "Síguenos en twitter @mundogea"
   sure: "Está seguro?"
   web:
     name: "Mundo GEA"
