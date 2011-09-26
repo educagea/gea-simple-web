@@ -165,8 +165,8 @@ es:
   logo:
     alt: "GEA Formación - Ir a la página principal"
   meta:
-    description: "Mundogea es una empresa que se dedica a la formación desde un punto de vista innovador, comprueba nuestro catálogo de cursos."
-    keywords: "Cursos online, Formación virtual, Gestión de la educación Autónoma"
+    description: "Mundogea es una empresa que se dedica a la formación desde un punto de vista innovador, comprueba nuestro catálogo de cursos. También tenemos una editorial con la que publicamos nuestra propia revista y contenidos."
+    keywords: "Cursos online, Formación virtual, Gestión de la educación Autónoma, Editorial, Revista, Mundogea"
   register:
     lost_password: "Recuperar contraseña"
     one: "Registrarse"
