@@ -4,6 +4,6 @@ ActionMailer::Base.smtp_settings = {
   :domain               => "mundogea.com",
   :user_name            => "enrique.barra",
   :password             => ENV['EMAIL_PASS'],
-  :authentication       => "plain",
+  :authentication       => :login,
   :enable_starttls_auto => true
 }
