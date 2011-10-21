@@ -57,6 +57,7 @@ header, footer, section, nav, article, aside {
 	letter-spacing: 3px;
 	color: #3B5998;
 	margin-bottom: 5px;
+	margin-left: 8px;
 }
 .medium_text {
 	font-weight: bold;
@@ -64,6 +65,7 @@ header, footer, section, nav, article, aside {
 	letter-spacing: 3px;
 	color: #3B5998;
 	margin-bottom: 5px;
+	margin-left: 8px;
 }
 
 .small_text {
@@ -440,6 +442,12 @@ label.validation_error {
 	float: left;
 }
 
+.close_image{
+	width: 50px;
+	margin-right: 10px;
+	float: right;
+}
+
 .plan_list_image_right{
 	margin-left: 30px;
 }
@@ -516,6 +524,11 @@ label.validation_error {
 	height: 80px;
 }
 
+.li_plan_list_title{
+	padding-left: 30px;
+	margin-top: 80px;
+}
+
 .closing_x{
 	padding-left: 10px;
 }
@@ -544,38 +557,38 @@ label.validation_error {
 	float: right;
 }
 
-#gea_world_image{
-	width: 350px;
-	height: 250px;
-	margin: 80px 90px 80px 90px;
+#imagen_mundo_puzzle{
+	width: 200px;
+	height: 200px;
+	margin: 400px 0px 30px 250px;
 }
 
 #gea_world_link1{
-	left: 180px;
+	left: 150px;
 	top: 50px;
 	position: absolute;
 }
 
 #gea_world_link2{
-	left: 350px;
-	top: 180px;
+	left: 240px;
+	top: 190px;
 	position: absolute;
 }
 
 #gea_world_link3{
-	left: 300px;
-	top: 350px;
+	left: 30px;
+	top: 330px;
 	position: absolute;
 }
 
 #gea_world_link4{
-	left: 35px;
-	top: 300px;
+	left: 140px;
+	top: 260px;
 	position: absolute;
 }
 
 #gea_world_link5{
-	left: 0px;
+	left: 10px;
 	top: 120px;
 	position: absolute;
 }
@@ -590,7 +603,7 @@ label.validation_error {
 }
 
 .ball_link_selected{
-	text-shadow: #6374AB 3px -3px 2px;
+	text-shadow: #6374AB 2px -2px 2px;
 }
 
 .mundogea_content_lastline{
@@ -599,4 +612,23 @@ label.validation_error {
 
 #all_but_header{
 	width: 100%;
+}
+
+.mundogea_logo_peque{
+	width: 50px;
+	height: 50px;
+	vertical-align: middle;
+}
+
+.mundogea_centered_text{
+	margin-left: 8px;
+}
+
+.title_half_info{
+	color: #83C905;
+}
+
+#image_cursos{
+	width: 450px;
+	margin-left: 20px;
 }
