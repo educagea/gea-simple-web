@@ -3,8 +3,7 @@
 <%end%>
 
 <%content_for :javascript do%>
-  $("#gea_world_li").addClass("selected");
-  $("#gea_world_li a").removeClass("clear_text");
+  $("#gea_world_link1").addClass("ball_link_selected");
 <%end%>
 
     <section>
@@ -14,7 +13,12 @@
               	<%= image_tag('mundo_puzzle.jpg', :id=>"imagen_mundo_puzzle")%>
               	
               	<a href="javascript:show_info_in_mundogea(1)" title="<%= t("frontpage.help_click")%>">              		
-              		<div id="gea_world_link1" class="ball_link"><%= image_tag('logo_app_lila.png', :class=>"mundogea_logo_peque")%><span class="mundogea_centered_text medium_text"><%= t("frontpage.gea_world.link1")%></span></div>
+              		<div id="gea_world_link1" class="ball_link">
+              			<%= image_tag('logo_app_lila.png', :class=>"mundogea_logo_peque")%>
+              			<span class="mundogea_centered_text medium_text">
+              				<%= t("frontpage.gea_world.link1")%>
+              				</span>
+              		</div>
               	</a>
               	<a href="javascript:show_info_in_mundogea(2)" title="<%= t("frontpage.help_click")%>">
               		<div id="gea_world_link2" class="ball_link"><%= image_tag('logo_app_amarillo.png', :class=>"mundogea_logo_peque")%><span class="mundogea_centered_text medium_text"><%= t("frontpage.gea_world.link2")%></span></div>
@@ -23,7 +27,7 @@
               		<div id="gea_world_link3" class="ball_link"><%= image_tag('logo_app_verde.png', :class=>"mundogea_logo_peque")%><span class="mundogea_centered_text medium_text"><%= t("frontpage.gea_world.link3")%></span></div>
               	</a>
               	<a href="javascript:show_info_in_mundogea(4)" title="<%= t("frontpage.help_click")%>">
-              		<div id="gea_world_link4" class="ball_link"><%= image_tag('logo_app_gris.png', :class=>"mundogea_logo_peque")%><span class="mundogea_centered_text medium_text"><%= t("frontpage.gea_world.link4")%></span></div>
+              		<div id="gea_world_link4" class="ball_link"><%= image_tag('logo_app_gris.png', :class=>"mundogea_logo_peque", :id=>"logo_de_editorial")%><span class="mundogea_centered_text medium_text"><%= t("frontpage.gea_world.link4")%></span></div>
               	</a>
               	<a href="javascript:show_info_in_mundogea(5)" title="<%= t("frontpage.help_click")%>">
               		<div id="gea_world_link5" class="ball_link"><%= image_tag('logo_app_azul.png', :class=>"mundogea_logo_peque")%><span class="mundogea_centered_text medium_text"><%= t("frontpage.gea_world.link5")%></span></div>
@@ -32,35 +36,35 @@
             </div>
             <div id="half_right" >
 				<div class="right_content" id="mundogea_content1">
-					<div class="big_text mundogea_title"><%= image_tag('logo_app_lila.png', :class=>"mundogea_logo_peque")%><span class="mundogea_centered_text big_text"><%= t("frontpage.gea_world.link1")%></span></div>
+					<div class="big_text mundogea_title"><%= image_tag('logo_app_lila.png', :class=>"mundogea_logo_peque mundogea_logo_in_title")%><span class="mundogea_centered_text_title big_text"><%= t("frontpage.gea_world.link1")%></span></div>
 					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link1_p1").html_safe%></div>
 					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link1_p2").html_safe%></div>	
 					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link1_p3").html_safe%></div>
 					<div class="plan_list_small_text mundogea_content mundogea_content_lastline"><%= t("frontpage.gea_world.link1_p4")%></div>						
 				</div>
 				<div class="right_content" id="mundogea_content2" style="display:none">
-					<div class="big_text mundogea_title"><%= image_tag('logo_app_amarillo.png', :class=>"mundogea_logo_peque")%><span class="mundogea_centered_text big_text"><%= t("frontpage.gea_world.link2")%></span></div>
+					<div class="big_text mundogea_title"><%= image_tag('logo_app_amarillo.png', :class=>"mundogea_logo_peque mundogea_logo_in_title")%><span class="mundogea_centered_text_title big_text"><%= t("frontpage.gea_world.link2")%></span></div>
 					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link2_p1").html_safe%></div>
 					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link2_p2").html_safe%></div>	
 					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link2_p3").html_safe%></div>
 					<div class="plan_list_small_text mundogea_content mundogea_content_lastline"><%= t("frontpage.gea_world.link2_p4")%></div>						
 				</div>
 				<div class="right_content" id="mundogea_content3" style="display:none">
-					<div class="big_text mundogea_title"><%= image_tag('logo_app_verde.png', :class=>"mundogea_logo_peque")%><span class="mundogea_centered_text big_text"><%= t("frontpage.gea_world.link3")%></span></div>
+					<div class="big_text mundogea_title"><%= image_tag('logo_app_verde.png', :class=>"mundogea_logo_peque mundogea_logo_in_title")%><span class="mundogea_centered_text_title big_text"><%= t("frontpage.gea_world.link3")%></span></div>
 					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link3_p1").html_safe%></div>
 					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link3_p2").html_safe%></div>	
 					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link3_p3").html_safe%></div>
 					<div class="plan_list_small_text mundogea_content mundogea_content_lastline"><%= t("frontpage.gea_world.link3_p4")%></div>						
 				</div>
 				<div class="right_content" id="mundogea_content4" style="display:none">
-					<div class="big_text mundogea_title"><%= image_tag('logo_app_gris.png', :class=>"mundogea_logo_peque")%><span class="mundogea_centered_text big_text"><%= t("frontpage.gea_world.link4")%></span></div>
+					<div class="big_text mundogea_title"><%= image_tag('logo_app_gris.png', :class=>"mundogea_logo_peque mundogea_logo_in_title")%><span class="mundogea_centered_text_title big_text"><%= t("frontpage.gea_world.link4")%></span></div>
 					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link4_p1").html_safe%></div>	
 					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link4_p2").html_safe%></div>
 					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link4_p3").html_safe%></div>
 					<div class="plan_list_small_text mundogea_content mundogea_content_lastline"><%= t("frontpage.gea_world.link4_p4")%></div>						
 				</div>
 				<div class="right_content" id="mundogea_content5" style="display:none">
-					<div class="big_text mundogea_title"><%= image_tag('logo_app_azul.png', :class=>"mundogea_logo_peque")%><span class="mundogea_centered_text big_text"><%= t("frontpage.gea_world.link5")%></span></div>
+					<div class="big_text mundogea_title"><%= image_tag('logo_app_azul.png', :class=>"mundogea_logo_peque mundogea_logo_in_title")%><span class="mundogea_centered_text_title big_text"><%= t("frontpage.gea_world.link5")%></span></div>
 					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link5_p1").html_safe%></div>
 					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link5_p2").html_safe%></div>	
 					<div class="plan_list_small_text mundogea_content"><%= t("frontpage.gea_world.link5_p3").html_safe%></div>
