@@ -8,18 +8,29 @@
 	<div class="div_login">
 		
 		
-
 	<form id="login" class="expose" method="post" action="http://moodle.mundogea.com/login/index.php">
-		<b>Login to Moodle</b><br>
-		<label>Email:</label><br><input type="text" name="username" id="username" size="20" value="" /><p>
-		<label>Contraseña:</label><br><input type="password" name="password" id="password" size="20" value="" />
-		<p style="text-align: center">
-		<input type="submit" value="Login" />
-		</p> 
+			<table cellspacing="0" id="frontpage_login">
+			  <tbody>
+			  	<tr>
+			  		<td><label>Nombre de usuario:</label></td>
+			  		<td class="second_column"><label>Contraseña:</label></td>
+			  	</tr>
+			  	<tr>
+			  		<td><input type="text" name="username" id="username" size="15" value="" /></td>
+			  		<td class="second_column"><input type="password" name="password" id="password" size="15" value="" /></td>
+			  		<td class="second_column"><input type="submit" value=" Entrar " /></td>
+			  	</tr>
+			  	<tr>
+			  		<td class="sub_login"><%= link_to t('devise.sign_up'), "http://moodle.mundogea.com/login/signup.php", :class => "register_link" %></td>
+			  		<td class="sub_login second_column" colspan="2"><%= link_to t('devise.forgot_passwd'), "http://moodle.mundogea.com/login/forgot_password.php", :class => "register_link" %></td>
+			  	</tr>
+			  </tbody>	
+			</table>
 	</form>
-
 
 	</div>
 
 </div>
 
+	
+	
